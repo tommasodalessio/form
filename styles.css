@@ -1,6 +1,18 @@
 /*style*/
 
 body {
-    background-color: aqua;
-    color: blueviolet;
+    background-color: black;
+    display: flex;
+}
+
+video {
+    opacity: 30%;
+}
+
+#text {
+    min-width: 55%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
