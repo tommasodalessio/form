@@ -3,16 +3,47 @@
 body {
     background-color: black;
     display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 video {
     opacity: 30%;
 }
 
-#text {
+#dx {
     min-width: 55%;
-    color: aliceblue;
+    color: #20C20E;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.compile {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 10px solid;
+    border-color: #20C20E;
+}
+
+.text {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 900;
+    color: aliceblue;
+    margin-bottom: 100px;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    border: 4px solid #20C20E;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
