@@ -1,49 +1,82 @@
 /*style*/
 
+@font-face { 
+    font-family: Delicious; 
+    src: url('Pixelify_Sans/PixelifySans-VariableFont_wght.ttf'); 
+} 
+ 
+@font-face { 
+    font-family: Delicious; 
+    font-weight: bold; 
+    src: url('Pixelify_Sans/PixelifySans-VariableFont_wght.ttf');
+}
+
 body {
     background-color: black;
     display: flex;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    height: 100vh;
+    font-family: 'Delicious', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
 }
 
 video {
-    opacity: 30%;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 #dx {
-    min-width: 55%;
     color: #20C20E;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.compile {
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 10px solid;
-    border-color: #20C20E;
+    max-height: 100vh;
 }
 
 .text {
-    text-align: center;
+    flex: 1;
     font-size: 100px;
     font-weight: 900;
     color: aliceblue;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 form {
-    box-sizing: border-box;
-    padding: 2rem;
-    border-radius: 1rem;
+    flex: 3;
+    margin: 20px;
+    padding: 20px;
     background-color: black;
     border: 4px solid #20C20E;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+label {
+    font-size: 30px;
+}
+
+input {
+    font-family: "Delicious";
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 35px;
+}
+
+button {
+    font-family: "Delicious";
+    width: 100px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+
